@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<title>PMS-Made by Tushar Singh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+
+
+
+<div class="navbar">
+  <a  href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="#"><i class="fa fa-fw fa-user"></i>Login</a> 
+  <a class="active" href="class.html"><i class="fa fa-fw fa-book"></i></a> 
+  <a href="#"><i class='fa fa-fw fa-mobile'></i>Contact<a>
+</div>
+<body>
+<body style="background-color:powderblue;">
+
+<div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px">
+  <h5 class="w3-bar-item">Up112</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Fade')">Lost Article</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Left')">HRMS</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Right')">Criminal Case</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top')">Person record</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Bottom')">E-Challan</button>
+
+</div>
+
+<div style="margin-left:130px">
+  <div class="w3-padding">Police Management System</div>
+
+  <div id="Fade" class="w3-container city w3-animate-opacity" style="display:none">
+    <h2>Lost Article</h2>
+   <table border="2">
+<tr>
+<td>UserName</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td>
+</tr>
+<tr>
+<td>Contact Number
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Location
+</td>
+<td>
+<form>  
+<label> Select </label>  
+<select>  
+<option value = "Gomti Nagar">Gomti Nagar  
+</option>  
+<option value = "Mahanagar">Mahanagar
+</option>  
+<option value = "Alambagh">Alambagh 
+</option>  
+<option value = "Chinhat">Chinhat  
+</option>  
+</select>  
+</form> 
+</td></tr>
+<tr>
+<td>FIR Registered
+</td>
+<td>
+<input type="radio" id="select" name="fav_language" value="Yes">
+<label for="Yes">Yes</label><br>
+<input type="radio" id="select" name="fav_language" value="Yes">
+<label for="Yes">No</label><br>
+</td></tr>
+<tr>
+<td>Reason-
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Lost Date From-
+</td>
+<td>
+  <input type="date" id="Lost" name="Lost">
+</td></tr>
+</table>
+  </div>
+
+  <div id="Left" class="w3-container city w3-animate-left" style="display:none">
+    <h2>Vehicle</h2>
+  <table border="2">
+<tr>
+<td>Owner Name</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td>
+</tr>
+<tr>
+<td>Contact Number
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Location
+</td>
+<td>
+<form>  
+<label> Select </label>  
+<select>  
+<option value = "Gomti Nagar">Gomti Nagar  
+</option>  
+<option value = "Mahanagar">Mahanagar
+</option>  
+<option value = "Alambagh">Alambagh 
+</option>  
+<option value = "Chinhat">Chinhat  
+</option>  
+</select>  
+</form> 
+</td></tr>
+<tr>
+<td>FIR Registered
+</td>
+<td>
+<input type="radio" id="select" name="fav_language" value="2 Wheeler">
+<label for="type">2 Wheeler</label><br>
+<input type="radio" id="select" name="fav_language" value="4 Wheeler">
+<label for="type">4 Wheeler</label><br>
+</td></tr>
+<tr>
+<td>Vehicle Number
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Lost Date From-
+</td>
+<td>
+  <input type="date" id="Lost" name="Lost">
+</td></tr>
+
+
+
+
+
+
+
+
+
+</table>
+  </div>
+
+  <div id="Top" class="w3-container city w3-animate-top" style="display:none">
+    <h2>Person Record</h2>
+  <table border="2">
+<tr>
+<td>Lost Person Name</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td>
+</tr>
+<tr>
+<td>Contact Number
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Last Location Seen
+</td>
+<td>
+<form>  
+<label> Select </label>  
+<select>  
+<option value = "Gomti Nagar">Gomti Nagar  
+</option>  
+<option value = "Mahanagar">Mahanagar
+</option>  
+<option value = "Alambagh">Alambagh 
+</option>  
+<option value = "Chinhat">Chinhat  
+</option>  
+</select>  
+</form> 
+</td></tr>
+<tr>
+<td>Gender
+</td>
+<td>
+<input type="radio" id="Gender" name="fav_language" value="Male">
+<label for="Male">Male</label><br>
+<input type="radio" id="Gender" name="fav_language" value="Female">
+<label for="Female">Female</label><br>
+</td></tr>
+<tr>
+<td>Relationship
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Lost Date From-
+</td>
+<td>
+  <input type="date" id="Lost" name="Lost">
+</td></tr>
+</table>
+  </div>
+
+  <div id="Right" class="w3-container city w3-animate-right" style="display:none">
+    <h2>HRMS</h2>
+   <tr>
+<td>Officier Name
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+   <tr>
+<td>Contact Number
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<br>
+<tr>
+<td>Location
+</td>
+<td>
+<form>  
+<label> Select </label>  
+<select>  
+<option value = "Gomti Nagar">Gomti Nagar  
+</option>  
+<option value = "Mahanagar">Mahanagar
+</option>  
+<option value = "Alambagh">Alambagh 
+</option>  
+<option value = "Chinhat">Chinhat  
+</option>  
+</select>  
+</form> 
+</td></tr>
+<tr>
+<td>Gender
+</td>
+<td>
+<input type="radio" id="select" name="fav_language" value="Male">
+<label for="Gender">Male</label>
+<input type="radio" id="select" name="fav_language" value="Female">
+<label for="Gender">Female</label>
+</td></tr>
+<tr>
+<br>
+<td>Article type
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Duty In-
+</td>
+<td>
+  <<input type="time" id="appt" name="appt">
+</td></tr>
+<td>Duty Out-
+</td>
+<td>
+  <<input type="time" id="appt" name="appt">
+</td></tr>
+  </div>
+
+  <div id="Bottom" class="w3-container city w3-animate-bottom" style="display:none">
+   <h2>E-Challan</h2>
+  <table border="2">
+<tr>
+<td>Username</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td>
+</tr>
+<tr>
+<td>Challan Number
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Nearest Police Station Location
+</td>
+<td>
+<form>  
+<label> Select </label>  
+<select>  
+<option value = "Gomti Nagar">Gomti Nagar  
+</option>  
+<option value = "Mahanagar">Mahanagar
+</option>  
+<option value = "Alambagh">Alambagh 
+</option>  
+<option value = "Chinhat">Chinhat  
+</option>  
+</select>  
+</form> 
+</td></tr>
+<tr>
+<td>Gender
+</td>
+<td>
+<input type="radio" id="select" name="fav_language" value="2 Wheeler">
+<label for="type">2 Wheeler</label><br>
+<input type="radio" id="select" name="fav_language" value="4 Wheeler">
+<label for="type">4 Wheeler</label><br>
+</td></tr>
+<tr>
+<td>Vechicle Type-
+</td>
+<td>
+ <input type="text" id="fname" name="fname">
+</td></tr>
+<tr>
+<td>Date-
+</td>
+
+</table>
+  </div>
+
+
+
+</div>
+  <style>
+      .blink {
+        animation: blinker 0.6s linear infinite;
+        color: #FF0000;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+      .blink-one {
+        animation: blinker-one 1s linear infinite;
+      }
+      @keyframes blinker-one {
+        0% {
+          opacity: 0;
+        }
+      }
+      .blink-two {
+        animation: blinker-two 1.4s linear infinite;
+      }
+      @keyframes blinker-two {
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+
+
+<script>
+function openLink(evt, animName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>
